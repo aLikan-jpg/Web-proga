@@ -1,0 +1,183 @@
+body{
+    margin: 0;/*по умолчанию стоят отступы, сбрасываем их*/
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: #090803;
+}
+/*box sizing фиксирует грагницы наших блоков(независимо от контента, который в них находится */
+*,
+*:before
+*:after {
+    box-sizing: border-box;
+}
+    /*Container*/
+    /*=====================================*/
+    .container{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+/*Header*/
+/*=====================================*/
+.header{
+    font-family: 'Open Sans', sans-serif;
+    color: #20003b;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+}
+/*=====================================*/
+/*HeaderInner*/
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #090803;
+    padding: 30px 0;
+    align-items: center;
+
+}
+/*Img*/
+.header img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+/*=====================================*/
+/*Nav*/
+.nav{
+    display: flex;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.navlink{
+    margin-left: 50px;
+    color: #0c0017;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.1s linear;
+
+}
+.navlink:hover{
+    opacity: 1;
+}
+/*=====================================*/
+/*Achieve list*/
+.Name{
+    margin-left: 25px;
+}
+.achievemets{
+    align-items: center;
+}
+.achieve{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+.achieve-list{
+    list-style: none;
+}
+.achieve-list li{
+    position: relative;
+    padding: 20px 0 20px 40px;
+    color: #33302a;
+    font-variant: small-caps;
+    font-weight: bold;
+    cursor: pointer;
+}
+.achieve-list li:before{
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #4F5151;
+    content: "";
+    left: 0;
+    transition: .3s ease-in-out;
+    top: 27px;
+}
+.achieve-list li:after{
+    position: absolute;
+    border-left: 1px dotted #4F5151;
+    width: 1px;
+    bottom: -12px;
+    content: "";
+    left: 3px;
+    top: 48px;
+}
+.achieve-list li:hover:before{box-shadow: 0 0 0 10px rgba(0,0,0,.2)}
+.achieve-list li:last-child:after{content: none;}
+/*=====================================*/
+/*Quote*/
+.quote{
+    font-family: 'Festive', cursive;
+}
+.quotetitle{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+/*=====================================*/
+/*Historical Fact*/
+.historicalarticle{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+.historicalfact{
+    text-align: center;
+    font-size: 16px;
+}
+/*=====================================*/
+
+
+
+/*=====================================*/
+/*footer*/
+.footer{
+    text-align: center;
+    border-top: 1px solid #090803;
+}
+/*=====================================*/
+/*Article*/
+.Article{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+/*=====================================*/
+/*Mascot*/
+.mascot{
+    font-size: 17px;
+}
+/*=====================================*/
+/*Code*/
+.Code{
+    font-weight: bold;
+}
+/*=====================================*/
+/*Intro*/
+.intro{
+    height: 800px;
+    background: url("img/pexels-johannes-plenio-2259232.jpg");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
