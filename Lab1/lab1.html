@@ -5,10 +5,8 @@
     <link rel="stylesheet" href="Style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&family=Raleway&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Festive&family=Open+Sans:wght@300&family=Raleway:wght@100&display=swap" rel="stylesheet">
+
     <title>Аликин Никита Романович M33122</title>
 </head>
 <body>
@@ -16,14 +14,16 @@
     <div class="container">
         <div class="header-inner">
             <div class="header-logo">
-                <img src="img/aLian-logo.jpeg" alt="">
+                <img src="img/aLian-logo.jpeg" title="aLikan" alt="">
             </div>
             <h1 class="Name">Аликин Никита Романович M33122</h1>
             <nav class="nav">
-                <a class="navlink" href="#">Достижения</a>
-                <a class="navlink" href="#"> Исторический факт </a>
-                <a class="navlink" href="#"> Талисман </a>
-                <a class="navlink" href="#"> Код </a>
+                <a class="navlink" href="#Achieve">Достижения</a>
+                <a class="navlink" href="#history"> Исторический факт </a>
+                <a class="navlink" href="#mascot"> Талисман </a>
+                <a class="navlink" href="#code"> Код </a>
+                <a class="navlink" href="#quote"> Цитата </a>
+
             </nav>
         </div>
     </div>
@@ -34,8 +34,8 @@
 <main>
     <div class="achievemets">
         <div class="container">
-        <section>
-            <article class="Article">Достижения</article>
+        <section id="Achieve">
+            <h3 class="title">Достижения</h3>
         <ul class="achieve-list">
             <li> Всегда прав</li>
             <li> Чемпион Хабаровска по всему</li>
@@ -62,22 +62,25 @@
     </div>
     <div class="historicalfact">
         <div class="container">
-    <article class="Article">
+            <section id="history">
+                <h3 class="title">
         <p>
             Исторический факт
         </p>
-    </article>
+                </h3>
         <aside>
             <p>
                 Автор данного сайта родился
                 <time datetime="2002-01-14"><strong>14 января 2002 года</strong></time>
             </p>
         </aside>
+            </section>
     </div>
     </div>
     <div class="mascot">
         <div class="container">
-        <h3 class="Article"> Талисман</h3>
+            <section id="mascot">
+        <h3 class="title"> Талисман</h3>
            <pre>
         ⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
         ⠸⡇⠀⠿⡀⠀⠀⠀⣀⡴⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -95,12 +98,15 @@
         ⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀
         ⠉⠛⠻⠿⠿⠿⠿⠛⠉
     </pre>
+            </section>
     </div>
     </div>
     <div class="Code">
         <div class="container">
-    <article class="Article"> Пример кода</article>
-    <p>
+            <section id="code">
+
+
+                <h3 class="title"> Пример кода</h3>
         <pre>
     int l = 0;
     int r = n;
@@ -118,9 +124,10 @@
     if (arr[r] == key) cout << "Индекс элемента " << key << " в массиве равен: " << r;
     else cout << "Извините, но такого элемента в массиве нет";
      </pre>
-    </p>
+            </section>
     </div>
     </div>
+    <section id="quote">
     <blockquote class="quote">
         <article class="quotetitle">Цитата</article>
         <p>"Есть решения, которые отрезают путь назад. Их непременно надо принимать."</p>
@@ -128,6 +135,7 @@
             Ф.Кафка
         </cite>
     </blockquote>
+    </section>
 </main>
 <footer>
     <div class="footer">

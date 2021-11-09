@@ -2,7 +2,9 @@ body{
     margin: 0;/*по умолчанию стоят отступы, сбрасываем их*/
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
+    line-height: 1.5;
     color: #090803;
+    background: linear-gradient(to top, white, #daf7fd);
 }
 /*box sizing фиксирует грагницы наших блоков(независимо от контента, который в них находится */
 *,
@@ -43,6 +45,7 @@ body{
     width: 70px;
     height: 70px;
     border-radius: 50%;
+    filter: drop-shadow(5px 6px 2px #4444dd);
 }
 /*=====================================*/
 /*Nav*/
@@ -67,7 +70,7 @@ body{
 /*=====================================*/
 /*Achieve list*/
 .Name{
-    margin-left: 25px;
+    margin-left: 30px;
 }
 .achievemets{
     align-items: center;
@@ -114,6 +117,8 @@ body{
 /*Quote*/
 .quote{
     font-family: 'Festive', cursive;
+    font-style: italic;
+    letter-spacing: 2px;
 }
 .quotetitle{
     text-align: center;
@@ -142,8 +147,8 @@ body{
     border-top: 1px solid #090803;
 }
 /*=====================================*/
-/*Article*/
-.Article{
+/*title*/
+.title{
     text-align: center;
     font-weight: bold;
     font-size: 30px;
@@ -162,7 +167,8 @@ body{
 /*Intro*/
 .intro{
     height: 800px;
-    background: url("img/pexels-johannes-plenio-2259232.jpg");
+    background: #daf7fd url("img/pexels-johannes-plenio-2259232.jpg");
+    background-size: cover;
 }
 
 
