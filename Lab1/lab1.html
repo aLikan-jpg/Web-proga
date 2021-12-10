@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <script src="script.js"></script>
+    <script src="list.js"></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="Style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,9 +34,8 @@
 
 </div>
 <main>
-    <div class="achievemets">
+    <section class="achievemets">
         <div class="container">
-        <section id="Achieve">
             <h3 class="title">Достижения</h3>
         <ul class="achieve-list">
             <li> Всегда прав</li>
@@ -43,7 +43,6 @@
             <li> Мой одногруппник кремлебот</li>
             <li> Ну и так в целом неплохой парень</li>
         </ul>
-    </section>
     <section class="achievemets-info">
         <dl>
             <dt> Всегда прав</dt>
@@ -57,7 +56,7 @@
         </dl>
     </section>
         </div>
-    </div>
+    </section>
     <div class="Image">
     </div>
     <div class="historicalfact">
@@ -127,7 +126,18 @@
             </section>
     </div>
     </div>
-
+       <h2> To Do List</h2>
+        <div class="list">
+            <div class="to-do-list">
+                <div class="input-task">
+                    <input type="text" id="task">
+                </div>
+                <div class="list-button">
+                    <button id="task-add">Добавить</button>
+                </div>
+                <div class="list-wrapper"></div>
+        </div>
+    <section class="table">
     <di class="table">
         <div class="grid">
             <div class="box">Имя</div>
@@ -149,8 +159,9 @@
             <div class="box">Дима</div>
             <div class="box">400</div>
             <div class="box">Кс</div>
-            <div class="box">Бот</div>
+            <div class="box">Жарит банан</div>
         </div>
+    </section>
     <section id="quote">
     <blockquote class="quote">
         <h2 class="quotetitle">Цитата</h2>
@@ -168,7 +179,6 @@
     </p>
     </div>
     <div id="load-time"></div>
-    lorem
 </footer>
 </body>
 </html>
