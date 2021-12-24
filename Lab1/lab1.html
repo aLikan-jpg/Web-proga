@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <script src="script.js"></script>
-    <script src="list.js"></script>
+    <script src="todo.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="Style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,10 +34,11 @@
         </div>
     </div>
 </header>
-<div class="intro">
+<div class="intro"></div>>
 
-</div>
-<main>
+
+
+    <main>
     <section class="achievemets">
         <div class="container">
             <h3 class="title">Достижения</h3>
@@ -76,9 +81,8 @@
             </section>
     </div>
     </div>
-    <div class="mascot">
+    <section  class="mascot">
         <div class="container">
-            <section id="mascot">
         <h3 class="title"> Талисман</h3>
            <pre>
         ⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -97,12 +101,21 @@
         ⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀
         ⠉⠛⠻⠿⠿⠿⠿⠛⠉
     </pre>
-            </section>
     </div>
-    </div>
+    </section>
+    <section class="gallery">
+        <div class="container">
+            <h2> Fun Gallery </h2>
+            <p class="gallery-item">
+                <img src="img/gallery_item_1.jpeg" width="320" alt="">
+                <img src="img/gallery_item_1.jpeg" alt="">
+                <img src="img/gallery_item_1.jpeg" alt="">
+            </p>
+        </div>
+    </section>
     <div class="Code">
         <div class="container">
-            <section id="code">
+
 
 
                 <h3 class="title"> Пример кода</h3>
@@ -123,46 +136,44 @@
     if (arr[r] == key) cout << "Индекс элемента " << key << " в массиве равен: " << r;
     else cout << "Извините, но такого элемента в массиве нет";
      </pre>
-            </section>
     </div>
-    </div>
-       <h2> To Do List</h2>
-        <div class="list">
-            <div class="to-do-list">
-                <div class="input-task">
-                    <input type="text" id="task">
+        <div class="container">
+
+                <div class="fullinfo" id="ToDoList">
+                    <form action="#">
+                        <input type="text" name="item" id="item" placeholder="I want to..." />
+                        <input type="button" class="addBtn" value="Add" />
+                    </form>
+
+                    <ul id="myUL"></ul>
+                    <script src="/src/scripts/todo.js"></script>
                 </div>
-                <div class="list-button">
-                    <button id="task-add">Добавить</button>
+        </div>
+            <di class="table">
+                <div class="grid">
+                    <div class="box">Имя</div>
+                    <div class="box">Количество часов</div>
+                    <div class="box">Дисциплина</div>
+                    <div class="box">Ранг</div>
+                    <div class="box">Тимофей</div>
+                    <div class="box">2000</div>
+                    <div class="box">Дота</div>
+                    <div class="box">Полубог</div>
+                    <div class="box">Никита</div>
+                    <div class="box">3000</div>
+                    <div class="box">Дота</div>
+                    <div class="box">Полубог </div>
+                    <div class="box">Миша</div>
+                    <div class="box">5000</div>
+                    <div class="box">Кс</div>
+                    <div class="box">Бог</div>
+                    <div class="box">Дима</div>
+                    <div class="box">400</div>
+                    <div class="box">Кс</div>
+                    <div class="box">Жарит банан</div>
                 </div>
-                <div class="list-wrapper"></div>
-        </div>
-    <section class="table">
-    <di class="table">
-        <div class="grid">
-            <div class="box">Имя</div>
-            <div class="box">Количество часов</div>
-            <div class="box">Дисциплина</div>
-            <div class="box">Ранг</div>
-            <div class="box">Тимофей</div>
-            <div class="box">2000</div>
-            <div class="box">Дота</div>
-            <div class="box">Полубог</div>
-            <div class="box">Никита</div>
-            <div class="box">3000</div>
-            <div class="box">Дота</div>
-            <div class="box">Полубог </div>
-            <div class="box">Миша</div>
-            <div class="box">5000</div>
-            <div class="box">Кс</div>
-            <div class="box">Бог</div>
-            <div class="box">Дима</div>
-            <div class="box">400</div>
-            <div class="box">Кс</div>
-            <div class="box">Жарит банан</div>
-        </div>
-    </section>
-    <section id="quote">
+                <script src="src/scripts/lab6.js"></script>
+                <section id="quote">
     <blockquote class="quote">
         <h2 class="quotetitle">Цитата</h2>
         <q>Есть решения, которые отрезают путь назад. Их непременно надо принимать.</q>
@@ -171,14 +182,46 @@
         </cite>
     </blockquote>
     </section>
+                <div class="block">
+                    <div class="block-slide">
+                        <div class="block-body">
+                            <div class="image-slider swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="swiper-slide-img">
+                                            <img src="img/slider-item1.jpeg" alt="Пикча1">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper-slide-img">
+                                            <img src="img/slider-item3.jpeg" alt="Пикча1">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper-slide-img">
+                                            <img src="img/slider-item4.jpeg" alt="Пикча1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 </main>
 <footer>
-    <div class="footer">
     <p>
         &copy;Аликин Н.Р. ИТМО 2021
     </p>
-    </div>
     <div id="load-time"></div>
 </footer>
+    <script src="script.js"></script>
+    <script src="mswiper.js"></script>
+    <script src="src/scripts/lab6.js"></script>
+
 </body>
 </html>
