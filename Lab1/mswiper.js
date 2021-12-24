@@ -3,9 +3,22 @@ new Swiper('.image-slider',{
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
     },
-    speed: 600,
-    effect: 'fade',
-    fadeEffect: {
-        crossFade: true
+    speed: 400,
+    // effect: 'fade',
+    // fadeEffect: {
+    //     crossFade: true
+    // },
+    effect: 'cube',
+    cubeEffect: {
+        slideShadows: true,
+        shadow: true,
+        shadowOffset: 20,
     },
+    autoplay:{
+        delay: 1000,
+        stopOnLastSlide: false,
+        disableOnInteraction: false
+    },
+    autoHeight: true,
+
 });

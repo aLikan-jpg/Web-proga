@@ -398,11 +398,11 @@ a {
     background: #f9f9f9;
 }
 #ToDoList ul li:hover {
-    background: #fed6bc;
+    background: #90ffff;
 }
 
 #ToDoList ul li.checked {
-    background: darksalmon;
+    background: #90d5e7;
     text-decoration: line-through;
 }
 
