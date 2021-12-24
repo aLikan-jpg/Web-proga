@@ -15,7 +15,7 @@
     })
 
     function add() {
-        if (item.value == '') {
+        if (item.value == "") {
             alert('You did not enter any item!')
         } else {
             list.innerHTML += '<li>' + item.value + '</li>'

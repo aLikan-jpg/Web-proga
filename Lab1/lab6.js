@@ -31,7 +31,7 @@ async function getPost() {
            <p class="card-text">${post.title}</p>
            </div>
            </div>
-           <div class="preloader"><img src="src/images/preloader.gif" /></div>`
+          <div class="preloader"><img id="loadPh" src="img/preloader.gif"/></div>`
 
                 con = con + 1
             }

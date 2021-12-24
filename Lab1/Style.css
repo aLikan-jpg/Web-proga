@@ -14,8 +14,7 @@ body{
 }
     /*Container*/
     /*=====================================*/
-    .container{
-        width: 100%;
+.container{
         max-width: 1200px;
         margin: 0 auto;
     }
@@ -25,10 +24,10 @@ body{
     font-family: 'Open Sans', sans-serif;
     color: #20003b;
     position: fixed;
-    /*top: 0;
-    left: 0;*/
-    z-index: 1000;
     width: 100%;
+    top: 0;
+    /*left: 0;*/
+    z-index: 1000;
     margin: auto;
     padding: 0;
     background: #90d5e7;
@@ -58,8 +57,12 @@ body{
     text-transform: uppercase;
 
 }
+.navi{
+    background: #4444dd;
+    color: #daf7fd;
+}
 .navlink{
-    margin-left: 50px;
+    margin-left: 10px;
     color: #0c0017;
     text-decoration: none;
     opacity: 0.8;
@@ -75,7 +78,8 @@ body{
 /*=====================================*/
 /*Achieve list*/
 .Name{
-    margin-left: 30px;
+    margin: 10px;
+    font-size: 18px;
 }
 .achievemets{
     align-items: center;
@@ -343,10 +347,13 @@ a {
     margin-top: 70px;
 }
 
-.container {
-    margin: auto;
+/*f*/
+.achievemets-file{
+    margin-top: 131px;
 }
-
+.vape{
+    margin-top: 131px;
+}
 @media screen and (max-width: 992px) {
     .container {
         max-width: 750px;
@@ -485,7 +492,75 @@ button {
     margin-bottom: 20px;
     border-radius: 5px;
 }
+.cardBox{
+    display: flex;
+    flex-wrap: wrap;
+    place-content: space-around;
+    margin-top: 50px;
+}
+.card{
+    width: 300px;
+    height: 400px;
+    border: 2px solid #90ffff;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.card-body{
+    color: black;
+    padding: 5px;
+}
+.btnBox{
+    text-align: center;
+    margin-top: 30px;
+}
+.card-img{
+    border-radius: 3px;
+    padding-top: 20px;
+}
+.button{
+    color: black;
+    border: 2px solid #00efdf;
+    border-radius: 5px;
+    font-size: 32px;
+    padding: 10px;
+}
 
+.button:hover {
+    background: #2bd0ee;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+.preloader {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: none;
+    left: 0;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.active {
+    width: 300px;
+    height: 400px;
+    border: 2px solid #99fff0;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+#loadPh {
+    padding-top: 30%;
+    height: 180px;
+    width: 270px;
+}
 
 
 /*Media*/
