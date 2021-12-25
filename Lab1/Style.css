@@ -254,14 +254,21 @@ line-height: 30px;
 .image-slider_image{
     text-align: center;
 }
-.image-slider_image img{
-    max-width: 100%;
+.swiper-slider_image img{
+    width: 100%;
     padding: 0px 0px 0px 30px;
 }
 .block-body{
     min-width: 0;
 }
 
+.swiper-slide img {
+    width: 100%;
+    min-height: 100%;
+}
+.swiper{
+    width: 500px;
+}
 
 
 

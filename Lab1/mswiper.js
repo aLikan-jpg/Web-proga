@@ -1,4 +1,4 @@
-new Swiper('.image-slider',{
+new Swiper('.swiper',{
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
@@ -14,11 +14,11 @@ new Swiper('.image-slider',{
         shadow: true,
         shadowOffset: 20,
     },
-    autoplay:{
-        delay: 1000,
-        stopOnLastSlide: false,
-        disableOnInteraction: false
-    },
-    autoHeight: true,
+    // autoplay:{
+    //     delay: 1000,
+    //     stopOnLastSlide: false,
+    //     disableOnInteraction: false
+    // },
+
 
 });
